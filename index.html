@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para mi niña 💗</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <div class="hearts" aria-hidden="true"></div>
+
+  <main>
+    <section id="inicio" class="pantalla activa">
+      <div class="regalo">🎁</div>
+      <p class="mini">Tengo algo preparado para vos...</p>
+      <h1>Feliz cumpleaños, mi niña 💗</h1>
+      <p class="sub">Hay algunas cositas que quería decirte.</p>
+      <button id="abrirBtn" class="boton">Abrir mi regalo ✨</button>
+    </section>
+
+    <section id="principal" class="pantalla">
+      <div class="cabecera">
+        <span>🌸</span>
+        <h2>Una pequeña cajita para vos</h2>
+        <p>4 años y 7 meses compartiendo historias, risas y momentos que guardo con muchísimo cariño.</p>
+      </div>
+
+      <div class="tarjetas">
+        <button class="tarjeta" data-seccion="carta">
+          <span>💌</span><strong>Una carta</strong><small>Algo que quería decirte</small>
+        </button>
+        <button class="tarjeta" data-seccion="recuerdos">
+          <span>📸</span><strong>Recuerdos</strong><small>Momentos que guardo</small>
+        </button>
+        <button class="tarjeta" data-seccion="admiro">
+          <span>🌟</span><strong>Lo que admiro</strong><small>Las cosas que veo en vos</small>
+        </button>
+        <button class="tarjeta" data-seccion="dias">
+          <span>🌙</span><strong>Para días difíciles</strong><small>Abrí esto cuando lo necesites</small>
+        </button>
+      </div>
+
+      <div class="musica">
+        <p>🎵 Para acompañar este pequeño regalo</p>
+        <audio id="musica" controls loop>
+          <source src="music.mp3" type="audio/mpeg">
+          Tu navegador no puede reproducir este audio.
+        </audio>
+        <small>Colocá tu archivo <b>music.mp3</b> en esta misma carpeta para usar la canción.</small>
+      </div>
+    </section>
+
+    <section id="carta" class="contenido">
+      <button class="volver">← Volver</button>
+      <div class="hoja">
+        <span class="emoji-grande">💌</span>
+        <h2>Para mi niña</h2>
+        <p>Quería aprovechar tu cumpleaños para decirte algo que quizás no te digo lo suficiente: te aprecio y te quiero muchísimo.</p>
+        <p>Después de 4 años y 7 meses, miro todo lo que vivimos y me hace sonreír pensar que aquella persona que conocí en la escuela terminó convirtiéndose en alguien tan importante para mí.</p>
+        <p>Amo tu sonrisa, tus ojos y esos abrazos que tienen una forma muy especial de hacerme sentir acompañado.</p>
+        <p>Espero que este nuevo año de tu vida te traiga momentos hermosos, sueños cumplidos y muchas razones para sonreír. Y, si me dejás, quiero seguir estando ahí para compartir muchos de esos momentos con vos.</p>
+        <pclass="firma">Feliz cumpleaños, mi niña. 💗<br>Te amo y muchísimo mi vida hermosa.</p>
+      </div>
+    </section>
+
+    <section id="recuerdos" class="contenido">
+      <button class="volver">← Volver</button>
+      <div class="hoja">
+        <span class="emoji-grande">📸</span>
+        <h2>Algunos recuerdos</h2>
+        <p>Hay momentos que quizá parecen simples, pero para mí quedaron guardados de una manera especial.</p>
+        <div class="galeria">
+          <figure><img src="imagenes/foto1.jpg" alt="Nuestro recuerdo 1"><figcaption>La noche de mi fiesta de colación ✨</figcaption></figure>
+          <figure><img src="imagenes/foto2.jpg" alt="Nuestro recuerdo 2"><figcaption>Aquel día que salimos a comer 🍽️</figcaption></figure>
+          <figure><img src="imagenes/foto3.jpg" alt="Nuestro recuerdo 3"><figcaption>Esos momentos en los que simplemente dormíamos juntos 🌙</figcaption></figure>
+          <figure><img src="imagenes/foto4.jpg" alt="Nuestro recuerdo 4"><figcaption>Otro pedacito de nuestra historia 💗</figcaption></figure>
+          <figure><img src="imagenes/foto5.jpg" alt="Nuestro recuerdo 5"><figcaption>Y uno más para guardar 🐱</figcaption></figure>
+          <figure><img src="imagenes/foto6.jpg" alt="Nuestro recuerdo 6"><figcaption>Siempre soy el hombre mas feliz con vos a mi lado</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="admiro" class="contenido">
+      <button class="volver">← Volver</button>
+      <div class="hoja"
+        <span class="emoji-grande">🌟</span>
+        <h2>Lo que admiro de vos</h2>
+        <p>Hay muchas cosas que hacen que te admire, pero estas son algunas que siempre me llaman la atención:</p>
+        <div class="lista">
+          <div>🧠 <b>Tu inteligencia.</b> Me encanta la forma en que pensás y cómo buscás resolver las cosas.</div>
+          <div>💬 <b>Tu forma de hablar.</b> Tenés una manera de expresarte que te hace única.</div>
+          <div>💪 <b>Tu capacidad de hacer las cosas.</b> Cuando te proponés algo, buscás la manera de conseguirlo.</div>
+          <div>🌷 <b>Tu forma de ser.</b> Hay detalles tuyos que quizá para vos son normales, pero que yo valoro muchísimo.</div>
+          <div>✨ <b>La persona que estás construyendo.</b> Me pone orgulloso verte avanzar, aprender y seguir intentando.</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="dias" class="contenido">
+      <button class="volver">← Volver</button>
+      <div class="hoja">
+        <span class="emoji-grande">🌙</span>
+        <h2>Para cuando tengas un día difícil</h2>
+        <p>Si algún día abrís esto sintiendo que todo te supera, quiero que recuerdes algo:</p>
+        <p><b>No tenés que poder con todo todo el tiempo.</b></p>
+        <p>Podés estar cansada, podés tener un mal día, podés no saber qué hacer. Eso no cambia lo mucho que valés.</p>
+        <p>Y aunque yo no pueda solucionar todos tus problemas, quiero que sepas que podés contar conmigo para escucharte, acompañarte y hacerte un poquito de compañía.</p>
+        <p>Respirá. Andá de a poco. Mañana será otro día.</p>
+        <p class="firma">Y si necesitás un abrazo, guardé uno acá. 🤗💗</p>
+      </div>
+    </section>
+
+    <footer>Hecho con cariño, por alguien que te ama muchísimo 💗</footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap');
+
+*{box-sizing:border-box}
+body{
+  margin:0; min-height:100vh; font-family:'DM Sans',sans-serif;
+  background:linear-gradient(135deg,#fff0f7,#f8e8ff,#ffeaf2);
+  color:#4d3041; overflow-x:hidden;
+}
+main{width:min(920px,92%);margin:auto;position:relative;z-index:2}
+.pantalla,.contenido{min-height:100vh;display:none;align-items:center;justify-content:center;flex-direction:column;text-align:center;padding:50px 0}
+.pantalla.activa,.contenido.activa{display:flex}
+#inicio h1,.cabecera h2,.hoja h2{font-family:'Playfair Display',serif}
+#inicio h1{font-size:clamp(2.4rem,7vw,5rem);margin:8px 0;color:#8c456e}
+.mini{font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#b86b99}
+.sub{font-size:1.05rem}
+.regalo{font-size:5rem;animation:flotar 2.5s ease-in-out infinite}
+.boton,.volver{
+  border:0;border-radius:999px;padding:14px 25px;background:#d86da5;color:white;
+  font-weight:700;font-size:1rem;cursor:pointer;box-shadow:0 10px 25px #b45a8750;
+  transition:.25s
+}
+.boton:hover{transform:translateY(-3px) scale(1.03)}
+.cabecera{max-width:700px}
+.cabecera h2{font-size:clamp(2rem,5vw,3.4rem);margin:5px}
+.cabecera span{font-size:3rem}
+.tarjetas{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;width:min(700px,100%);margin:30px 0}
+.tarjeta{
+  border:1px solid #ffffffaa;background:#ffffff9c;backdrop-filter:blur(10px);border-radius:24px;
+  padding:25px;cursor:pointer;text-align:left;color:#4d3041;box-shadow:0 12px 35px #9f5b7b20;transition:.25s
+}
+.tarjeta:hover{transform:translateY(-5px);box-shadow:0 18px 40px #9f5b7b30}
+.tarjeta span{display:block;font-size:2.2rem;margin-bottom:8px}.tarjeta strong{display:block;font-size:1.2rem}.tarjeta small{opacity:.75}
+.musica{background:#ffffff99;border-radius:20px;padding:16px;width:min(520px,100%);margin-bottom:25px}
+.musica audio{width:100%}.musica small{display:block;margin-top:8px;opacity:.7}
+.hoja{
+  width:min(780px,100%);background:#fffffff0;border-radius:30px;padding:35px;
+  box-shadow:0 20px 60px #8f486520;text-align:left;line-height:1.7
+}
+.hoja h2{text-align:center;color:#8c456e;font-size:2.5rem}.emoji-grande{display:block;text-align:center;font-size:3rem}
+.volver{align-self:flex-start;margin-bottom:15px;padding:10px 18px}
+.firma{text-align:center;font-weight:700;color:#a24d7e;font-size:1.1rem}
+.galeria{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:15px}
+figure{margin:0;background:#fff5fa;padding:10px;border-radius:18px}
+figure img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:12px;display:block}
+figcaption{font-size:.9rem;padding:9px 3px 3px;text-align:center}
+.lista{display:grid;gap:14px}.lista div{background:#fff4f8;border-radius:16px;padding:15px}
+footer{text-align:center;padding:15px 0 35px;opacity:.7}
+.hearts{position:fixed;inset:0;pointer-events:none;z-index:1}
+.heart{position:absolute;bottom:-30px;font-size:18px;animation:subir linear forwards;opacity:.65}
+@keyframes subir{to{transform:translateY(-110vh) rotate(20deg);opacity:0}}
+@keyframes flotar{50%{transform:translateY(-10px) rotate(2deg)}}
+@media(max-width:650px){.tarjetas{grid-template-columns:1fr}.hoja{padding:23px}.pantalla,.contenido{padding:35px 0}}
